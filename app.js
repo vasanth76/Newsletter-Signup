@@ -1,10 +1,10 @@
 //jshint esversion: 6
 
 //API Key
-//0539eca14f8c14656584b738e8d1ccc4-us6
+//v0539eca14f8c14656584b738e8d1ccc4-us6
 
 // List ID
-// de88436b0c
+// de88436b0cv
 
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -40,11 +40,11 @@ app.post("/", function(req, res){
 
     const jsonData = JSON.stringify(data);
 
-    const url = "https://us6.api.mailchimp.com/3.0/lists/de88436b0c";
+    const url = "https://us6.api.mailchimp.com/3.0/lists/de88436b0cv";
     
     const options = {
         method: "POST",
-        auth: "vasanth1:0539eca14f8c14656584b738e8d1ccc4-us6"
+        auth: "vasanth1:v0539eca14f8c14656584b738e8d1ccc4-us6"
     }
 
     const request = https.request(url, options, function(response){
